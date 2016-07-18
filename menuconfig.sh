@@ -5,7 +5,7 @@
 RDIR=$(pwd)
 
 # directory containing cross-compile arm64 toolchain
-TOOLCHAIN=$HOME/build/toolchain/gcc-linaro-4.9-2016.02-x86_64_aarch64-linux-gnu
+TOOLCHAIN=$HOME/Kali_Kernel/linaro-64/bin/aarch64-linux-android-
 
 export ARCH=arm64
 export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-

@@ -2,14 +2,14 @@
 # simple bash script for generating dtb image
 
 # directory containing cross-compile arm64 toolchain
-TOOLCHAIN=$HOME/build/toolchain/gcc-linaro-4.9-2016.02-x86_64_aarch64-linux-gnu
+TOOLCHAIN=/home/test/Kali_Kernel/linaro-64/bin
 
 # device dependant variables
 PAGE_SIZE=2048
 DTB_PADDING=0
 
 export ARCH=arm64
-export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=$TOOLCHAIN/aarch64-linux-android-
 
 RDIR=$(pwd)
 BDIR=$RDIR/build

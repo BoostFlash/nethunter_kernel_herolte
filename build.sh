@@ -28,7 +28,7 @@ RDIR=$(pwd)
 VER=$(cat "$RDIR/VERSION")
 
 # directory containing cross-compile arm64 toolchain
-TOOLCHAIN=$HOME/build/toolchain/gcc-linaro-4.9-2016.02-x86_64_aarch64-linux-gnu
+TOOLCHAIN=/home/test/Kali_Kernel/linaro-64/bin
 
 # amount of cpu threads to use in kernel make process
 THREADS=5
@@ -36,9 +36,9 @@ THREADS=5
 ############## SCARY NO-TOUCHY STUFF ###############
 
 export ARCH=arm64
-export CROSS_COMPILE=$TOOLCHAIN/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=$TOOLCHAIN/aarch64-linux-android-
 
-[ "$DEVICE" ] || DEVICE=herolte
+[ "$DEVICE" ] || DEVICE=hero2lte
 [ "$TARGET" ] || TARGET=nethunter
 [ "$1" ] && VARIANT=$1
 [ "$VARIANT" ] || VARIANT=xx
